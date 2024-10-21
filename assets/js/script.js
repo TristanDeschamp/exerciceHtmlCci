@@ -16,4 +16,17 @@ document.getElementById('impots').addEventListener("click", (e) => {
 document.getElementById('toggleImage').addEventListener("click", () => {
 	const img = document.querySelector('img');
 	img.style.display = img.style.display === "none" ? "block" : "none";
-})
+});
+
+document.getElementById('toggleSite').addEventListener('click', () => {
+	const siteContent = document.getElementById('siteContent');
+	const toggleButton = document.getElementById('toggleSite');
+
+	if (siteContent.style.display === 'none') {
+		siteContent.style.display = 'block';
+		toggleButton.innerText = 'Cacher le site';
+	} else {
+		siteContent.style.display = 'none';
+		toggleButton.innerText = 'Afficher le site';
+	}
+});

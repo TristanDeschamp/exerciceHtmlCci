@@ -9,75 +9,79 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<!-- Header Début -->
-	<header>
-		<h1>Ma <span>Superbe</span> Page Web</h1>
-		<!-- Navbar Début -->
-		<nav>
-			<ul>
-				<li><a href="audio.html" title="Aller sur la page audio.html">Audio</a></li>
-				<li><a href="video.html" title="Aller sur la page video.html">Vidéo</a></li>
-				<li><a href="contact.html" title="Aller sur la page de contact">Contact</a></li>
-			</ul>
-		</nav>
-		<!-- Navbar Fin -->
-	</header>
-	<!-- Header Fin -->
+	<button id="toggleSite">Cacher le site</button>
+	<div id="siteContent">
+		<!-- Header Début -->
+		<header>
+			<h1>Ma <span>Superbe</span> Page Web</h1>
+			<!-- Navbar Début -->
+			<nav>
+				<ul>
+					<li><a href="audio.html" title="Aller sur la page audio.html">Audio</a></li>
+					<li><a href="video.html" title="Aller sur la page video.html">Vidéo</a></li>
+					<li><a href="contact.html" title="Aller sur la page de contact">Contact</a></li>
+				</ul>
+			</nav>
 
-	<!-- Main Début -->
-	<main>
-		<!-- Section Début -->
-		<section>
-			<h2>Voila la section main</h2>
-			<!-- Début Paragraphe -->
-			<p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit. Sunt <strong>eligendi sit error</strong>, officia iure porro, culpa <em>molestiae nihil</em>  animi fuga, accusantium rerum. <small>Consequuntur</small>, vero saepe vitae consectetur eos ratione itaque, <mark>laborum iusto minus veniam id</mark> Molestias, officia provident. Explicabo, <abbr title="Hypertext PreProcessor">PHP</abbr></p>
-			<!-- Fin Paragraphe -->
+			<!-- Navbar Fin -->
+		</header>
+		<!-- Header Fin -->
 
-			<!-- Image -->
-			<img src="assets/img/image.jpg" alt="Image d'un oiseau se posant sur un arbre.">
-			<button id="toggleImage">Masquer/Montrer l'image</button>
+		<!-- Main Début -->
+		<main>
+			<!-- Section Début -->
+			<section>
+				<h2>Voila la section main</h2>
+				<!-- Début Paragraphe -->
+				<p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit. Sunt <strong>eligendi sit error</strong>, officia iure porro, culpa <em>molestiae nihil</em>  animi fuga, accusantium rerum. <small>Consequuntur</small>, vero saepe vitae consectetur eos ratione itaque, <mark>laborum iusto minus veniam id</mark> Molestias, officia provident. Explicabo, <abbr title="Hypertext PreProcessor">PHP</abbr></p>
+				<!-- Fin Paragraphe -->
 
-			<!-- Liste ordonnée -->
-			<h3>Voila différente listes</h3>
-			<div class="lists">
-				<ol type="I">
-					<li>Aller au magasin</li>
-					<li>Acheter les ingrédients</li>
-					<li>Commencez à cuisiner</li>
-				</ol>
-				
-				<ol reversed>
-					<li>Aller au magasin</li>
-					<li>Acheter les ingrédients</li>
-					<li>Commencez à cuisiner</li>
-				</ol>
+				<!-- Image -->
+				<img src="assets/img/image.jpg" alt="Image d'un oiseau se posant sur un arbre.">
+				<button id="toggleImage">Masquer/Montrer l'image</button>
 
-				<ol start="1">
-					<li>Un truc</li>
-					<li>Un deuxième truc
-						<ol start="3" class="nestedList">
-							<li>Un troisième truc mais dans une autre liste</li>
-							<li>Un quatrième truc... J'ai plus d'idées 😭</li>
-						</ol>
-					</li>
-				</ol>
-			</div>
-		</section>
-		<!-- Section Fin -->
-	</main>
-	<!-- Main Fin -->
+				<!-- Liste ordonnée -->
+				<h3>Voila différente listes</h3>
+				<div class="lists">
+					<ol type="I">
+						<li>Aller au magasin</li>
+						<li>Acheter les ingrédients</li>
+						<li>Commencez à cuisiner</li>
+					</ol>
+					
+					<ol reversed>
+						<li>Aller au magasin</li>
+						<li>Acheter les ingrédients</li>
+						<li>Commencez à cuisiner</li>
+					</ol>
 
-	<!-- Footer Début -->
-	<footer>
-		<a id="impots" href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires#" target="_blank" title="Redirige vers la page des impôts">Mention Légale</a>
-		<address>
-			<p>Tristan Deschamp</p>
-			<p>07 77 77 77 77</p>
-			<p>pascalop@gmail.com</p>
-			<p>14 allée Charles Pathé</p>
-		</address>
-	</footer>
+					<ol start="1">
+						<li>Un truc</li>
+						<li>Un deuxième truc
+							<ol start="3" class="nestedList">
+								<li>Un troisième truc mais dans une autre liste</li>
+								<li>Un quatrième truc... J'ai plus d'idées 😭</li>
+							</ol>
+						</li>
+					</ol>
+				</div>
+			</section>
+			<!-- Section Fin -->
+		</main>
+		<!-- Main Fin -->
+
+		<!-- Footer Début -->
+		<footer>
+			<a id="impots" href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires#" target="_blank" title="Redirige vers la page des impôts">Mention Légale</a>
+			<address>
+				<p>Tristan Deschamp</p>
+				<p>07 77 77 77 77</p>
+				<p>pascalop@gmail.com</p>
+				<p>14 allée Charles Pathé</p>
+			</address>
+		</footer>
 	<!-- Footer Fin -->
+	</div>
 
 	<!-- Lien JS -->
 	<script src="assets/js/script.js"></script>
