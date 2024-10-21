@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Une petite page web pas piqué des hannetons.">
 	<title>Exo HTML 3</title>
+	<!-- Lien CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<!-- Header Début -->
 	<header>
-		<h1>Ma Superbe Page Web</h1>
+		<h1>Ma <span>Superbe</span> Page Web</h1>
 		<!-- Navbar Début -->
 		<nav>
 			<ul>
@@ -32,31 +34,34 @@
 			<!-- Fin Paragraphe -->
 
 			<!-- Image -->
-			<img src="assets/img/image.jpg" alt="Image d'un oiseau se posant sur un arbre." width="100" height="100">
+			<img src="assets/img/image.jpg" alt="Image d'un oiseau se posant sur un arbre.">
+			<button id="toggleImage">Masquer/Montrer l'image</button>
 
 			<!-- Liste ordonnée -->
 			<h3>Voila différente listes</h3>
-			<ol type="I">
-				<li>Aller au magasin</li>
-				<li>Acheter les ingrédients</li>
-				<li>Commencez à cuisiner</li>
-			</ol>
-			
-			<ol reversed>
-				<li>Aller au magasin</li>
-				<li>Acheter les ingrédients</li>
-				<li>Commencez à cuisiner</li>
-			</ol>
+			<div class="lists">
+				<ol type="I">
+					<li>Aller au magasin</li>
+					<li>Acheter les ingrédients</li>
+					<li>Commencez à cuisiner</li>
+				</ol>
+				
+				<ol reversed>
+					<li>Aller au magasin</li>
+					<li>Acheter les ingrédients</li>
+					<li>Commencez à cuisiner</li>
+				</ol>
 
-			<ol start="1">
-				<li>Un truc</li>
-				<li>Un deuxième truc
-					<ol start="3">
-						<li>Un troisième truc mais dans une autre liste</li>
-						<li>Un quatrième truc... J'ai plus d'idées 😭</li>
-					</ol>
-				</li>
-			</ol>
+				<ol start="1">
+					<li>Un truc</li>
+					<li>Un deuxième truc
+						<ol start="3" class="nestedList">
+							<li>Un troisième truc mais dans une autre liste</li>
+							<li>Un quatrième truc... J'ai plus d'idées 😭</li>
+						</ol>
+					</li>
+				</ol>
+			</div>
 		</section>
 		<!-- Section Fin -->
 	</main>
@@ -64,7 +69,7 @@
 
 	<!-- Footer Début -->
 	<footer>
-		<a href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires#" target="_blank" title="Redirige vers la page des impôts">Mention Légale</a>
+		<a id="impots" href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires#" target="_blank" title="Redirige vers la page des impôts">Mention Légale</a>
 		<address>
 			<p>Tristan Deschamp</p>
 			<p>07 77 77 77 77</p>
@@ -73,5 +78,8 @@
 		</address>
 	</footer>
 	<!-- Footer Fin -->
+
+	<!-- Lien JS -->
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
