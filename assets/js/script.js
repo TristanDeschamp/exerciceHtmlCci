@@ -1,7 +1,7 @@
 // Modofie la couleur des li au click
 document.querySelectorAll("li").forEach(item => {
 	item.addEventListener("click", () => {
-		item.style.color = item.style.color === "red" ? "black" : "red";
+		item.style.color = item.style.color === "red" ? "white" : "red";
 	});
 });
 
@@ -18,6 +18,7 @@ document.getElementById('toggleImage').addEventListener("click", () => {
 	img.style.display = img.style.display === "none" ? "block" : "none";
 });
 
+// Quand le bouton est cliqué avec l'id toggleSite, le body devient invisible et vice versa
 document.getElementById('toggleSite').addEventListener('click', () => {
 	const siteContent = document.getElementById('siteContent');
 	const toggleButton = document.getElementById('toggleSite');
